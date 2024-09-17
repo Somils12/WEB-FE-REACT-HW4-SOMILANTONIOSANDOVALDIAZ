@@ -1,38 +1,51 @@
 // src/components/Header.jsx
 const Header = () => {
     return (
-      <header className="bg-gray-800 text-white py-6">
-        <div className="container mx-auto px-4 text-center">
-          <h1 className="text-4xl font-bold mb-2">WEL-TUB Nightlife Experience</h1>
-          <p className="text-lg mb-4">Contact us for special promotions and events!</p>
-          <nav>
-            <ul className="flex justify-center space-x-8 text-lg">
-              <li>
-                <a href="#introduction" className="hover:text-blue-300 transition-colors duration-300">
-                  Introduction
-                </a>
-              </li>
-              <li>
-                <a href="#diagnosis" className="hover:text-blue-300 transition-colors duration-300">
-                  Diagnosis
-                </a>
-              </li>
-              <li>
-                <a href="#identity" className="hover:text-blue-300 transition-colors duration-300">
-                  Identity
-                </a>
-              </li>
-              <li>
-                <a href="#objectives" className="hover:text-blue-300 transition-colors duration-300">
-                  Objectives
-                </a>
-              </li>
-            </ul>
-          </nav>
-        </div>
-      </header>
+        <header className="bg-gray-900 text-white p-6 text-center shadow-lg">
+            <h1 className="text-orange-500 text-5xl tracking-wider font-bold">
+                WEL-TUB Nightlife Experience
+            </h1>
+            <p className="text-gray-400 mt-2">
+                Contact us for special promotions and events!
+            </p>
+            <nav className="mt-4">
+                <ul className="flex justify-center space-x-6">
+                    <li>
+                        <a
+                            href="#introduction"
+                            className="text-orange-500 font-bold hover:text-white hover:shadow-md transition-colors duration-300"
+                        >
+                            Introduccion
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            href="#diagnosis"
+                            className="text-orange-500 font-bold hover:text-white hover:shadow-md transition-colors duration-300"
+                        >
+                            Diagnostico
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            href="#identity"
+                            className="text-orange-500 font-bold hover:text-white hover:shadow-md transition-colors duration-300"
+                        >
+                            Identidad
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            href="#objectives"
+                            className="text-orange-500 font-bold hover:text-white hover:shadow-md transition-colors duration-300"
+                        >
+                            Objetivos
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
     );
-  };
-  
-  export default Header;
-  
+};
+
+export default Header;

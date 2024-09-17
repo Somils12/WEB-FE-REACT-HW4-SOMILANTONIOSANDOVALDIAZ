@@ -1,3 +1,6 @@
+import { useState } from 'react'
+import './App.css'
+
 import Header from './components/Header';
 import Dofa from './components/Dofa';
 import ObjectivesTable from './components/ObjectivesTable';
@@ -5,26 +8,32 @@ import OrganizationalIdentity from './components/OrganizationalIdentity';
 import Footer from './components/Footer';
 
 function App() {
+  const [count, setCount] = useState(0)
+
   return (
-    <div>
-      <Header />
-      <main className="p-4">
-        <section id="introduction" className="bg-gray-100 p-8 rounded-lg shadow-lg mb-8">
-          <h2 className="text-3xl font-bold mb-4 text-center text-gray-800">Introducción</h2>
-          <p className="text-lg text-gray-700 leading-relaxed mb-4">
-            ¡Bienvenido a <span className="font-bold">WEL-TUB</span>, el lugar donde la vida nocturna cobra vida! En <span className="font-bold">WEL-TUB</span>, nos especializamos en crear experiencias nocturnas inolvidables, ofreciendo una mezcla vibrante de entretenimiento, excelente música y eventos únicos diseñados para cada ocasión.
-          </p>
-          <p className="text-lg text-gray-700 leading-relaxed">
-            Ya sea que estés buscando una fiesta temática retro, un evento de DJ de renombre o una noche tranquila disfrutando de cócteles exóticos, en <span className="font-bold">WEL-TUB</span> tenemos algo para todos. Nuestra misión es hacer que cada noche sea especial y crear recuerdos que duren toda la vida. ¡Descubre la magia de la noche con nosotros!
-          </p>
-        </section>
-        <Dofa />
-        <OrganizationalIdentity />
-        <ObjectivesTable />
-      </main>
-      <Footer />
-    </div>
-  );
+    <>
+      <div className="bg-gray-900">
+        <Header />
+        <main className="p-4">
+          <section id="introduction" className="my-8">
+            <h2 className="text-2xl text-orange-500 mb-6 border-b-2 border-orange-500 pb-2">Introducción</h2>
+            <p className="text-gray-300 leading-relaxed text-justify">
+                Bienvenidos a WEL-TUB: La Revolución en la Vida Nocturna
+                En WEL-TUB, nuestra misión es crear una experiencia nocturna que va más allá de lo común, ofreciendo eventos únicos y un ambiente inigualable. Nos destacamos por nuestra capacidad de combinar entretenimiento, música y un servicio excepcional para garantizar que cada visita sea inolvidable.
+
+                A través de nuestro Diagnóstico DOFA, hemos identificado nuestras fortalezas, como nuestro ambiente único y nuestra variedad de eventos, pero también reconocemos desafíos y oportunidades de crecimiento, como la expansión de tipos de eventos y la mejora en la interacción con nuestras audiencias en redes sociales. Con una visión clara de convertirnos en el destino líder en la vida nocturna, tanto a nivel nacional como internacional, estamos comprometidos a superar las expectativas de nuestros clientes con innovación constante y excelencia.
+                
+                Nuestra prioridad es siempre la seguridad, la inclusión y la satisfacción de nuestros visitantes. Ya sea que busques un espacio vibrante para disfrutar de la mejor música o desees vivir una experiencia VIP personalizada, en WEL-TUB nos esforzamos por brindar lo mejor de la vida nocturna.
+            </p>
+          </section>
+          <Dofa />
+          <OrganizationalIdentity />
+          <ObjectivesTable />
+        </main>
+        <Footer />
+      </div>
+    </>
+  )
 }
 
-export default App;
+export default App

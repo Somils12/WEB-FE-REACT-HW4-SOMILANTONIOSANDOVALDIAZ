@@ -1,29 +1,32 @@
 // src/components/OrganizationalIdentity.jsx
 const OrganizationalIdentity = () => {
     return (
-      <section id="identity" className="my-8">
-        <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl font-bold mb-6">Identidad Organizacional</h2>
-          <dl className="text-left max-w-3xl mx-auto">
-            <dt className="text-lg font-bold mb-2">Misión</dt>
-            <dd className="mb-6">
-              Nuestra misión es proporcionar una experiencia nocturna de primer nivel, ofreciendo una combinación única de entretenimiento, música y servicio excepcional. Nos esforzamos por crear un ambiente donde los clientes puedan disfrutar de momentos memorables, ya sea celebrando una ocasión especial o simplemente buscando una noche divertida con amigos.
-            </dd>
-            
-            <dt className="text-lg font-bold mb-2">Visión</dt>
-            <dd className="mb-6">
-              Aspiramos a convertirnos en el destino líder en la vida nocturna, no solo por la calidad de nuestros eventos, sino también por nuestra capacidad para innovar y ofrecer un ambiente inigualable. Nuestra visión es ser reconocidos a nivel global por ofrecer experiencias únicas que redefinan el concepto de entretenimiento nocturno.
-            </dd>
-            
-            <dt className="text-lg font-bold mb-2">Políticas</dt>
-            <dd className="mb-6">
-              Nuestras políticas están orientadas a garantizar la seguridad, inclusividad y satisfacción del cliente en todos nuestros eventos y servicios. Promovemos un entorno seguro y acogedor para todos, asegurándonos de cumplir con los más altos estándares de calidad en cada aspecto de la experiencia que ofrecemos.
-            </dd>
-          </dl>
-        </div>
-      </section>
+        <section id="identity" className="my-8">
+            <h2 className="text-2xl text-orange-500 mb-6 border-b-2 border-orange-500 pb-2">Identidad Organizacional</h2>
+            <dl className="space-y-4">
+                <div>
+                    <dt className="text-lg font-bold text-gray-100">Misión</dt>
+                    <dd className="text-gray-300 text-justify">
+                        Nuestra misión es proporcionar una experiencia nocturna de primer nivel que trascienda lo común, combinando de manera única el entretenimiento, la música y un servicio al cliente excepcional. Nos esforzamos por crear momentos memorables para cada visitante, brindando un ambiente inclusivo y vibrante donde la diversión, la seguridad y la calidad de servicio son nuestras principales prioridades. A través de una oferta variada de eventos y experiencias personalizadas, buscamos que cada persona que nos visite se sienta parte de una comunidad dinámica y emocionante.
+                    </dd>
+                </div>
+
+                <div>
+                    <dt className="text-lg font-bold text-gray-100">Visión</dt>
+                    <dd className="text-gray-300 text-justify">
+                        Nuestra visión es convertirnos en el destino líder en la vida nocturna a nivel nacional e internacional, reconocidos por la innovación y la excelencia en la creación de experiencias. Nos proyectamos como un espacio de referencia para quienes buscan eventos originales y de alta calidad, donde la música, el entretenimiento y el ambiente se unen para crear vivencias incomparables. A través de nuestra evolución constante, buscamos posicionarnos como un referente en la industria del entretenimiento nocturno, siendo reconocidos por nuestra capacidad para marcar tendencia y superar las expectativas de nuestros clientes.
+                    </dd>
+                </div>
+
+                <div>
+                    <dt className="text-lg font-bold text-gray-100 ">Políticas</dt>
+                    <dd className="text-gray-300 text-justify">
+                        En todas nuestras operaciones y eventos, priorizamos la seguridad de nuestros clientes y empleados, asegurando que cada experiencia se desarrolle en un entorno controlado y de confianza. Promovemos un ambiente inclusivo, donde todas las personas, independientemente de su origen, género o preferencias, sean bienvenidas y tratadas con respeto. Además, estamos comprometidos con la satisfacción del cliente, ofreciendo un servicio de alta calidad que busca exceder las expectativas en cada interacción. Implementamos prácticas sostenibles y éticas, asegurándonos de que nuestra operación sea responsable tanto a nivel social como ambiental.
+                    </dd>
+                </div>
+            </dl>
+        </section>
     );
-  };
-  
-  export default OrganizationalIdentity;
-  
+};
+
+export default OrganizationalIdentity;
