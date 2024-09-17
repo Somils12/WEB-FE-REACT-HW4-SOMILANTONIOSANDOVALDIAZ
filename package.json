@@ -1,12 +1,14 @@
 {
+  "homepage": "https://Somils12.github.io/WEB-FE-REACT-HW4-SOMILANTONIOSANDOVALDIAZ/",
   "name": "well-tub-project",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
+    "predeploy": "npm run build",   
+    "deploy": "gh-pages -d dist",   
     "dev": "vite",
     "build": "vite build",
-    "deploy": "vite gh-pages",
     "lint": "eslint .",
     "preview": "vite preview"
   },
